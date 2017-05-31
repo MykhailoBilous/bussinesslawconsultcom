@@ -109,7 +109,7 @@ header > nav > ul > li > a {
 }
 .header-text h1{
 	border: thin 1px #434343;
-	text-shadow: 1px 1px 2px black, 0 0 1em black;
+	text-shadow: 3px 3px 5px #434343;
 }
 @media (max-width: 1000px){
 	.mobile-header{
@@ -154,7 +154,7 @@ header > nav > ul > li > a > div > span {
 
 .phone{
 	display: table;
-	color: #fff;
+	color: #434343;
 	text-shadow: 2 2 3 #434343;
 	padding-left:15%;
 	margin-top: 440px;
@@ -183,7 +183,7 @@ header > nav > ul > li > a > div > span {
 .agileits-contact-info ul li {
     display: inline-block;
     font-size: 14px;
-	color:#fff;
+	color: black;
 }
 .agileits-contact-info ul li span {
     margin-right: 10px;
@@ -193,11 +193,11 @@ header > nav > ul > li > a > div > span {
     margin-left: 25px;
 }
 .agileits-contact-info ul li a {
-    color: #fff;
+    color: black;
     vertical-align: text-bottom;
 }
 .agileits-contact-info ul li a:hover {
-    color: #fff;
+    color: black;
 }
 .w3_agileits_social_media{
 	float:right;
@@ -235,7 +235,10 @@ header > nav > ul > li > a > div > span {
 }
 .agile-header {
     margin: 20% 0 0 0;
-    border-top: 1px solid #fff; 
+    border-top: 1px solid #434343; 
+	text-shadow: 6px 6px 10px #434343;
+	color: #434343;
+	text-overflow: clip;
 }
 /*Welcome block Styles end*/
 /*--contact--*/
