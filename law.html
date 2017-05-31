@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="uk"><head>
+<title>Юридичні послуги</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
+<!-- //for-mobile-apps -->
+<!--Main Styles-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Animation-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+<!--Slider Styles-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!--Button Styles-->
+<link href="css/btn-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Contact Form Styles-->
+<link href="css/contact-form-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/animation.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-embedded.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hover effects-->
+<link href="css/hover.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/promo-menu-style.css" rel="stylesheet" type="text/css" media="screen"/>
+<!-- js -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+<!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hamburger menu-->
+<link href="css/hamburger.css" rel="stylesheet" type="text/css" media="all" />
+<!--Accordion-menu-->
+<link href="css/accordion-menu.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<link rel="stylesheet" type="text/css" href = "BlogPostAssets/styles/blogPostStyle.css">
+<script src="js/float-panel.js" media = "(min-width: 481px)"></script>
+</head>
+
+<body>
+<header class="header-max">
+  <nav role="navigation">
+    <ul>
+      <li> <a href="index.html" class="listed">
+        <div> Головна </div>
+        </a> </li>
+      <li> <a href="about_us.html" class="listed">
+        <div> Про нас </div>
+        </a> </li>
+      <li> <a href="consulting.html" class="listed">
+        <div > Консалтинг </div>
+        </a>
+        <div>
+          <ul>
+            <li> <a href="consulting.html#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="consulting.html#start_up">Стартап</a> </li>
+          <li> <a href="consulting.html#it" class="go_to">IT</a> </li>
+          <li> <a href="consulting.html#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="consulting.html#progect" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="consulting.html#grants" class="go_to">Проект Менеджмент</a> </li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="law.html" class="listed">
+        <div> Юридичні послуги </div>
+        </a>
+        <div>
+          <ul>
+          <li> <a href="#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="#corp">Корпоративне право</a> </li>
+          <li> <a href="#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="contact.html" target="contact" class="listed">
+        <div> Контакти </div>
+        </a> </li>
+    </ul>
+  </nav>
+</header>
+
+<!--Mobile Header-->
+<header class = "mobile-header">
+  <div class="container">
+    <div class="row">
+      <div class = "col-sm-6">
+        <button id="button" class="hamburger hamburger--slider dropdown dropdown-toggle" type="button" data-toggle="dropdown"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+        <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script> 
+      </div>
+    </div>
+  </div>
+  <div id="item" style="display: none;">
+    <div id="cssmenu">
+      <ul>
+        <li><a href = "index.html"><span>Головна</span></a></li>
+        <li><a href="about_us.html"><span>Про нас</span></a></li>
+        <li><a href="consulting.html"><span>Консалтинг</span></a>
+          <ul>
+            <li> <a href="consulting.html#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="consulting.html#start_up">Стартап</a> </li>
+          <li> <a href="consulting.html#it" class="go_to">IT</a> </li>
+          <li> <a href="consulting.html#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="consulting.html#progect" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="consulting.html#grants" class="go_to">Проект Менеджмент</a> </li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Юридичні послуги</span></a>
+          <ul>
+          <li> <a href="law.html#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="law.html#corp">Корпоративне право</a> </li>
+          <li> <a href="law.html#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Контакти</span></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class = "welcome">
+  <div class="container">
+    <div class="row">
+      <div class="header-text wow fadeInDown">
+        <h1 style="text-align: center;">BLC фінансово-юридична компанія, яка надає послуги для бізнесу у сфері Українського та Європейського права.</h1>
+      </div>
+      <div class="agile-header">
+        <div class="agileits-contact-info text-right wow fadeInUp">
+          <ul>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">mail@example.com</a></li>
+            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+080 264 995</li>
+          </ul>
+        </div>
+        <div class="w3_agileits_social_media wow fadeInUp">
+          <ul>
+            <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_twitter"><i class="icon-vk" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mainwrapper" data-sticky_parent>
+  <div id="content" class="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <div class="float-mobile-menu">
+        <ul>
+          <li> <a href="#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="#corp">Корпоративне право</a> </li>
+          <li> <a href="#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+      </div>
+    </div>
+    <section id="mainContent"> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id = "finances"><!-- Blog title -->Фінансове право</h1>
+      <p class="wow fadeIn">Фахівці Компанії забезпечать Вам:</p>
+      <p class="wow fadeIn">
+        -	надання юридичних консультацій з питань банківського кредитування, створення, реорганізації та ліквідації фінансових установ;
+       </p>
+       <p class="wow fadeIn">
+        -	консультування та практичну допомогу фінансовим;
+       </p>
+       <p class="wow fadeIn">
+        -	консультування та практичну допомогу фінансовим;
+       </p>
+       <p class="wow fadeIn">
+        -	юридичний супровід угод, в тому числі купівлі-продажу фінансових організацій, підготовку договорів, супровід питань, які стосуються корпоративних прав банків і фінансових компаній;
+       </p>
+       <p class="wow fadeIn">
+        -	консультування та супровід процедури кредитування резидентів нерезидентами;
+       </p>
+       <p class="wow fadeIn">
+        -	вирішення спорів, пов'язаних з банківським, валютним та іншим законодавством.
+       </p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <div id="corp"></div>
+      <h1 class="wow fadeInLeft"><!-- Blog title -->Корпоративне право</h1>
+      <p class="wow fadeIn">Для успішного ведення бізнесу надзвичайно важливим є коректне юридичне оформлення правовідносин засновників юридичних осіб між собою та власне із юридичною особою. Саме регулювання таких правовідносин і становить сутність корпоративного права.
+В сфері корпоративного права компанія надає наступні послуги:
+ </p>
+      <p class="wow fadeIn"> - Консультування з питань вибору оптимально організаційно-правової форми ведення бізнесу;</p>
+      <p class="wow fadeIn"> - Консультації та рекомендації з питань розподілу акцій (паїв), порядку формування статутного капіталу, структури та компетенції органів управління;</p>
+      <p class="wow fadeIn"> - Розробка установчих документів юридичних осіб усіх організаційно-правових форм;</p>
+      <p class="wow fadeIn"> - Розробка поточних документів юридичної особи, що визначають взаємовідносини між юридичною особою та її засновниками;</p>
+      <p class="wow fadeIn"> - Підготовка і проведення зборів засновників та акціонерів;</p>
+       <p class="wow fadeIn"> - Внесення та Державна реєстрація змін та доповнень до установчих документів юридичних осіб, змін керівників юридичних осіб та ін.;</p>
+      <p class="wow fadeIn"> - Правовий супровід процедур реорганізації та ліквідації підприємств всіх форм власності;</p>
+      <p class="wow fadeIn"> - Підготовка та супроводження угод, пов’язаних із відчуженням корпоративних прав;</p>
+      <p class="wow fadeIn"> - Забезпечення захисту комерційної таємниці;</p>
+      <p class="wow fadeIn"> - Правовий супровід вирішення корпоративних конфліктів.</p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id="agree"><!-- Blog title -->Договірне право</h1>
+      <p class="wow fadeIn">Економічний напрямок України в Європейський союз, змушує Український бізнес навчатись та розвиватись у тенденціях розвинутих країн.
+Наші послуги по аутсорсингу включають в себе:</p>
+      <p class="wow fadeIn"> - Послуги аутсорсингу та пошуку підрядників</p>
+      <p class="wow fadeIn"> - Перевірку авторитету та репутації європейського та українського партнера</p>
+      <p class="wow fadeIn"> - Виконання домовленостей по контрактам</p>
+      <p class="wow fadeIn"> - Консультування з питань щодо ведення бізнесу в цілому</p>
+      <p class="wow fadeIn"> - Внесення та Державна реєстрація змін та доповнень до установчих документів юридичних осіб, змін керівників юридичних осіб та ін.;</p>
+      <p class="wow fadeIn"> - Правовий супровід процедур реорганізації та ліквідації підприємств всіх форм власності;</p>
+      <p class="wow fadeIn"> - Підготовка та супроводження угод, пов’язаних із відчуженням корпоративних прав;</p>
+      <p class="wow fadeIn"> - Забезпечення захисту комерційної таємниці;</p>
+      <p class="wow fadeIn"> - Правовий супровід вирішення корпоративних конфліктів.</p>
+      <hr>
+      <!--End of text section--> 
+    </section>
+    <section>
+      <div class = "float-menu hidden-sm hidden-xs hidden-md">
+        <div class="float-panel" style="margin-top: 5%;">
+          <div>
+            <ul>
+          <li> <a href="#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="#corp">Корпоративне право</a> </li>
+          <li> <a href="#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-distributed">
+  <div class="footer-left" id = "start_up">
+    <div><img class="logo wow fadeIn" src ="images/logo.png" height="125px" width="125px" alt="blc_logo"></div>
+    <p class="footer-links"><a class="wow fadeInUp" href="index.html">Головна</a> · <a class="wow fadeInUp" href="about_us.html">Про нас</a> · <a class="wow fadeInUp" href="#">Юридичні послуги</a> · <a class="wow fadeInUp" href="consulting.html">Консалтинг</a> · <a class="wow fadeInUp" href="contact.html">Контакти</a></p>
+  </div>
+  <div class="footer-center">
+    <div> <i class="fa fa-map-marker wow bounceIn"></i>
+      <p class="wow fadeInRight"><span>Вулиця</span>Місто, Україна</p>
+    </div>
+    <div> <i class="fa fa-phone wow bounceIn"></i>
+      <p class="wow fadeInRight">+38000000000</p>
+    </div>
+    <div> <i class="fa fa-envelope wow bounceIn"></i>
+      <p class="wow fadeInRight"><a href="mailto:support@company.com">info@businesslawconsulting.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about wow fadeInRight"> <span>Про компанію</span> Наша мета стати лідерами ринку західної України у своєму сегменті рину. Для втілення цієї мети, ми зобов’язані проводити якісний консалтинг бізнесменів в ЄС, впроваджувати найновіші методи роботи з клієнтами у напрямку сфер ІТ та Стартапу, стратегічно та кваліфіковано розробляти проекти по створенню бізнесу в Європейському Союзі.</p>
+    <div class="footer-icons"> <a href="#"><i class=" wow bounceIn fa fa-facebook"></i></a> <a style = "padding-right: 1%;" href="#"><i class=" fa icon-vk wow bounceIn"></i></a> </div>
+  </div>
+  <div>
+    <p class="footer-company-name">BLC &copy; 2017</p>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- here stars scrolling icon --> 
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script> 
+<!-- //here ends scrolling icon --> 
+
+<!-- js --> 
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/scroll.js"></script>
+<!-- //js --> 
+<!-- for bootstrap working --> 
+<script src="js/bootstrap.js"></script> 
+<!-- //for bootstrap working --> 
+<!--WOW JS animation--> 
+<script  src="js/wow.min.js"></script> 
+<script>
+              new WOW().init();
+              </script> 
+
+<script type="text/javascript">
+
+		$(document).ready(function(){
+
+  $('#cssmenu > ul > li:has(ul)').addClass("has-sub");
+
+  $('#cssmenu > ul > li > a').click(function() {
+    var checkElement = $(this).next();
+    
+    $('#cssmenu li').removeClass('active');
+    $(this).closest('li').addClass('active');	
+    
+    
+    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+      $(this).closest('li').removeClass('active');
+      checkElement.slideUp('normal');
+    }
+    
+    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+      $('#cssmenu ul ul:visible').slideUp('normal');
+      checkElement.slideDown('normal');
+    }
+    
+    if (checkElement.is('ul')) {
+      return false;
+    } else {
+      return true;	
+    }		
+  });
+
+});
+	</script> 
+<script> 
+$( "#button" ).click(function() {
+$( "#item" ).toggle();
+});
+</script>
+</body>
+</html>

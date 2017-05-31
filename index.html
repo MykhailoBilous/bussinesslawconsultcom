@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>BLC</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Executive Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- //for-mobile-apps -->
+<!--Main Styles-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Animation-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+<!--Slider Styles-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!--Button Styles-->
+<link href="css/btn-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Contact Form Styles-->
+<link href="css/contact-form-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/animation.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-embedded.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hover effects-->
+<link href="css/hover.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/promo-menu-style.css" rel="stylesheet" type="text/css" media="screen"/>
+<!-- js -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+<!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hamburger menu-->
+<link href="css/hamburger.css" rel="stylesheet" type="text/css" media="all" />
+<!--Accordion-menu-->
+<link href="css/accordion-menu.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- start-smoth-scrolling -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<header class="header-max">
+  <nav role="navigation">
+    <ul>
+      <li> <a href="index.html" class="listed">
+        <div> Головна </div>
+        </a> </li>
+      <li> <a href="about_us.html" class="listed">
+        <div> Про нас </div>
+        </a> </li>
+      <li> <a href="consulting.html" class="listed">
+        <div > Консалтинг </div>
+        </a>
+        <div>
+          <ul>
+          <li> <a href="consulting.html#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="consulting.html#start_up">Стартап</a> </li>
+          <li> <a href="consulting.html#it" class="go_to">IT</a> </li>
+          <li> <a href="consulting.html#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="consulting.html#progect" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="consulting.html#grants" class="go_to">Проект Менеджмент</a> </li>
+        </ul>
+        </div>
+      </li>
+      <li> <a href="law.html" class="listed">
+        <div> Юридичні послуги </div>
+        </a>
+        <div>
+          <ul>
+          <li> <a href="law.html#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="law.html#corp">Корпоративне право</a> </li>
+          <li> <a href="law.html#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="contact.html" target="contact" class="listed">
+        <div> Контакти </div>
+        </a> </li>
+    </ul>
+  </nav>
+</header>
+
+<!--Mobile Header-->
+<header class = "mobile-header">
+  <div class="container">
+    <div class="row">
+      <div class = "col-sm-6">
+        <button id="button" class="hamburger hamburger--slider dropdown dropdown-toggle" type="button" data-toggle="dropdown"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+        <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script> 
+      </div>
+    </div>
+  </div>
+  <div id="item" style="display: none;">
+    <div id="cssmenu">
+      <ul>
+        <li><a href = "index.html"><span>Головна</span></a></li>
+        <li><a href="about_us.html"><span>Про нас</span></a></li>
+        <li><a href="consulting.html"><span>Консалтинг</span></a>
+          <ul>
+          <li> <a href="consulting.html#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="consulting.html#start_up">Стартап</a> </li>
+          <li> <a href="consulting.html#it" class="go_to">IT</a> </li>
+          <li> <a href="consulting.html#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="consulting.html#progect" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="consulting.html#grants" class="go_to">Проект Менеджмент</a> </li>
+        </ul>
+        </li>
+        <li><a href="law.html"><span>Юридичні послуги</span></a>
+          <ul>
+          <li> <a href="law.html#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="law.html#corp">Корпоративне право</a> </li>
+          <li> <a href="law.html#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </li>
+        <li><a href="contact.html"><span>Контакти</span></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class = "welcome">
+  <div class="container">
+    <div class="row">
+      <div >
+        <h1 class="header-text wow fadeInDown" style="text-align: center;">BLC фінансово-юридична компанія, яка надає послуги для бізнесу у сфері Українського та Європейського права.</h1>
+      </div>
+      <div class="agile-header">
+        <div class="agileits-contact-info text-right wow fadeInUp">
+          <ul>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">mail@example.com</a></li>
+            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+080 264 995</li>
+          </ul>
+        </div>
+        <div class="w3_agileits_social_media wow fadeInUp">
+          <ul>
+            <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_twitter"><i class="icon-vk" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  SECTION-1 -->
+<section> 
+  
+  <!-- Сontainer -->
+  <div class = "container" style="margin-top: 2%;">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-lg-6 wow bounceInLeft" style="margin-top: 1%;">
+          <div id="logo-holder"> <img src="images/consulting.png" class="image img-responsive img-rounded image-content" />
+            <div class="text box-content">
+              <ul>
+          <li> <a href="consulting.html#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="consulting.html#start_up">Стартап</a> </li>
+          <li> <a href="consulting.html#it" class="go_to">IT</a> </li>
+          <li> <a href="consulting.html#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="consulting.html#progect" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="consulting.html#grants" class="go_to">Проект Менеджмент</a> </li>
+        </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow bounceInRight"  style="margin-top: 1%;">
+          <div id="logo-holder"> <img src="images/law.png" class="image img-responsive img-rounded image-content" />
+            <div class="text box-content">
+              <ul>
+          <li> <a href="law.html#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="law.html#corp">Корпоративне право</a> </li>
+          <li> <a href="law.html#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-12" >
+          <h3 class="wow fadeIn"class="" style="text-align: center;">Розробка індивідуальних проектів для кожного бізнесу та пошук найякісніших рішень фінсового та юридичного напрмків.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+  
+  <div class="container offers-style">
+    <div class="row">
+      <div class="col-lg-12 page-header text-center">
+        <h2 class="wow fadeIn" >Наші послуги</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offers-table col-lg-12 col-sm-12">
+        <div class = "col-lg-6 col-md-6 content-grey white wow fadeInLeft">
+          <div class = "offers-segment ">
+            <h3>Бізнесмен України має намір почати бізнес в Європі, але не має партнерів в ЄС.</h3>
+          </div>
+          <div class = "offers-segment">
+            <p><a data-toggle="modal" data-target="#myModal" class="btn blue" href="">ДІЗНАТИСЯ БІЛЬШЕ ></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 content-white grey  wow fadeInRight">
+        <div class = "offers-segment">
+          <h3>Бізнесмен України бажає співпрацювати з Європейським бізнесом і має бізнес партнера в ЄС.</h3>
+        </div>
+        
+        <div class="offers-segment">
+          <p><a data-toggle="modal" data-target="#myModal" class="btn blue" href="">ДІЗНАТИСЯ БІЛЬШЕ ></a></p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 content-white white wow fadeInLeft">
+        <div class = "offers-segment">
+          <h3>Бізнесмен України має бізнес в Україні і хоче залучити Європейського партнера до бізнесу.</h3>
+        </div>
+        <div class = "offers-segment">
+          <p><a data-toggle="modal" data-target="#myModal" class="btn blue" href="">ДІЗНАТИСЯ БІЛЬШЕ ></a></p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 content-grey grey wow fadeInRight" >
+        <div class = "offers-segment" style="margin-left: 10%">
+          <h3>Резидент ЄС хоче створити бізнес в Україні.</h3>
+        </div>
+        <div class = "offers-segment">
+          <p><a data-toggle="modal" data-target="#myModal" class="btn blue" href="">ДІЗНАТИСЯ БІЛЬШЕ ></a></p>
+        </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" style="height: 25%; width: 75%; margin: auto;">
+            <div class="modal-header modal-box-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title modal-box-head">Замовити безкоштовну консультацію</h4>
+            </div>
+            <div class="modal-body modal-box">
+              <form>
+                <div class="form-group">
+                  <label for="usr">Ім'я:</label>
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                  <label for="email">Емейл:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="countries_phone1">Номер телефону:</label>
+                  <input type="text" class="form-control bfh-phone" data-country="countries_phone1">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Коментар:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn blue">Відправити</button>
+              </form>
+            </div>
+            <div class="modal-footer modal-box-footer">
+              <h6>*Надана інформація є повінсттю анонімною і не підлягає розповсюдженню</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- / CONTAINER--> 
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <div><img class="logo wow fadeIn" src ="images/logo.png" height="125px" width="125px" alt="blc_logo"></div>
+    <p class="footer-links"><a class="wow fadeInUp" href="index.html">Головна</a> · <a class="wow fadeInUp" href="about_us.html">Про нас</a> · <a class="wow fadeInUp" href="#">Юридичні послуги</a> · <a class="wow fadeInUp" href="consulting.html">Консалтинг</a> · <a class="wow fadeInUp" href="contact.html">Контакти</a></p>
+  </div>
+  <div class="footer-center">
+    <div> <i class="fa fa-map-marker wow bounceIn"></i>
+      <p class="wow fadeInRight"><span>Вулиця</span>Місто, Україна</p>
+    </div>
+    <div> <i class="fa fa-phone wow bounceIn"></i>
+      <p class="wow fadeInRight">+38000000000</p>
+    </div>
+    <div> <i class="fa fa-envelope wow bounceIn"></i>
+      <p class="wow fadeInRight"><a href="mailto:support@company.com">info@businesslawconsulting.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about wow fadeInRight"> <span>Про компанію</span>  Наша мета стати лідерами ринку західної України у своєму сегменті рину. Для втілення цієї мети, ми зобов’язані проводити якісний консалтинг бізнесменів в ЄС, впроваджувати найновіші методи роботи з клієнтами у напрямку сфер ІТ та Стартапу, стратегічно та кваліфіковано розробляти проекти по створенню бізнесу в Європейському Союзі. </p>
+    <div class="footer-icons"> <a href="#"><i class=" wow bounceIn fa fa-facebook"></i></a> <a style = "padding-right: 1%;" href="#"><i class=" fa icon-vk wow bounceIn"></i></a> </div>
+  </div>
+  <div>
+    <p class="footer-company-name">BLC &copy; 2017</p>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- for bootstrap working --> 
+<!-- <script src="js/bootstrap.js"></script> --> 
+<script src="js/bootstrap-3.3.7.js"></script> 
+
+<!-- //for bootstrap working --> 
+<!--WOW JS animation--> 
+<script src="js/wow.min.js"></script> <script>
+              new WOW().init();
+              </script> 
+<!--Buttons scripts--> 
+<script src="js/buttons.js"></script> 
+<!-- here stars scrolling icon --> 
+<!-- //here ends scrolling icon --> 
+<script src="js/custom.js"></script> 
+<script src="js/menu.js"></script> 
+<script type="text/javascript">
+
+		$(document).ready(function(){
+
+  $('#cssmenu > ul > li:has(ul)').addClass("has-sub");
+
+  $('#cssmenu > ul > li > a').click(function() {
+    var checkElement = $(this).next();
+    
+    $('#cssmenu li').removeClass('active');
+    $(this).closest('li').addClass('active');	
+    
+    
+    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+      $(this).closest('li').removeClass('active');
+      checkElement.slideUp('normal');
+    }
+    
+    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+      $('#cssmenu ul ul:visible').slideUp('normal');
+      checkElement.slideDown('normal');
+    }
+    
+    if (checkElement.is('ul')) {
+      return false;
+    } else {
+      return true;	
+    }		
+  });
+
+});
+	</script> 
+<script> 
+$( "#button" ).click(function() {
+$( "#item" ).toggle();
+});
+</script>
+<script> 
+	$(document).ready(function (event) {
+    var yOffset = $("#my-element").offset().top;
+    $("body").scrollTop(yOffset);
+		$(document).ready(function () {
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && isChrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    });
+});
+	
+	$('a.someclass').click(function(e)
+{
+    // Special stuff to do when this link is clicked...
+    
+    // Cancel the default action
+    e.preventDefault();
+});
+	</script>
+</body>
+</html>

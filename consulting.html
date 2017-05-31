@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<title>Консалтинг</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
+<!-- //for-mobile-apps -->
+<!--Main Styles-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Animation-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+<!--Slider Styles-->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!--Button Styles-->
+<link href="css/btn-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Contact Form Styles-->
+<link href="css/contact-form-style.css" rel="stylesheet" type="text/css" media="all" />
+<!--Fonts-->
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/animation.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7-codes.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-ie7.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fontello-embedded.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hover effects-->
+<link href="css/hover.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/promo-menu-style.css" rel="stylesheet" type="text/css" media="screen"/>
+<!-- js -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+<!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<!--Hamburger menu-->
+<link href="css/hamburger.css" rel="stylesheet" type="text/css" media="all" />
+<!--Accordion-menu-->
+<link href="css/accordion-menu.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<link rel="stylesheet" type="text/css" href = "BlogPostAssets/styles/blogPostStyle.css">
+<script src="js/float-panel.js" media = "(min-width: 481px)"></script>
+</head>
+
+<body>
+<header class="header-max">
+  <nav role="navigation">
+    <ul>
+      <li> <a href="index.html" class="listed">
+        <div> Головна </div>
+        </a> </li>
+      <li> <a href="about_us.html" class="listed">
+        <div> Про нас </div>
+        </a> </li>
+      <li> <a href="consulting.html" class="listed">
+        <div > Консалтинг </div>
+        </a>
+        <div>
+          <ul>
+            <li> <a href="#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="#start_up">Стартап</a> </li>
+          <li> <a href="#it" class="go_to">IT</a> </li>
+          <li> <a href="#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="#coworking" class="go_to">Співпраця з Європейськими Фірмами</a> </li>
+          <li> <a href="#grants" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="#progect" class="go_to">Проект Менеджмент</a> </li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="law.html" class="listed">
+        <div> Юридичні послуги </div>
+        </a>
+        <div>
+          <ul>
+          <li> <a href="#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="#corp">Корпоративне право</a> </li>
+          <li> <a href="#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="contact.html" class="listed">
+        <div> Контакти </div>
+        </a> </li>
+    </ul>
+  </nav>
+</header>
+
+<!--Mobile Header-->
+<header class = "mobile-header">
+  <div class="container">
+    <div class="row">
+      <div class = "col-sm-6">
+        <button id="button" class="hamburger hamburger--slider dropdown dropdown-toggle" type="button" data-toggle="dropdown"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+        <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script> 
+      </div>
+    </div>
+  </div>
+  <div id="item" style="display: none;">
+    <div id="cssmenu">
+      <ul>
+        <li><a href = "index.html"><span>Головна</span></a></li>
+        <li><a href="about_us.html"><span>Про нас</span></a></li>
+        <li><a href="consulting.html"><span>Консалтинг</span></a>
+          <ul>
+            <li> <a href="#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="#start_up">Стартап</a> </li>
+          <li> <a href="#it" class="go_to">IT</a> </li>
+          <li> <a href="#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="#coworking" class="go_to">Співпраця з Європейськими Фірмами</a> </li>
+          <li> <a href="#grants" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="#progect" class="go_to">Проект Менеджмент</a> </li>
+          </ul>
+        </li>
+        <li><a href="consulting.html"><span>Юридичні послуги</span></a>
+          <ul>
+          <li> <a href="law.html#finances" class="go_to">Фінансове право</a> </li>
+          <li> <a class="active go_to" href="law.html#corp">Корпоративне право</a> </li>
+          <li> <a href="law.html#agree" class="go_to">Договірне право</a> </li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Контакти</span></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class = "welcome">
+  <div class="container">
+    <div class="row">
+      <div class="header-text wow fadeInDown">
+        <h1 style="text-align: center;">BLC фінансово-юридична компанія, яка надає послуги для бізнесу у сфері Українського та Європейського права.</h1>
+      </div>
+      <div class="agile-header">
+        <div class="agileits-contact-info text-right wow fadeInUp">
+          <ul>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">mail@example.com</a></li>
+            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+080 264 995</li>
+          </ul>
+        </div>
+        <div class="w3_agileits_social_media wow fadeInUp">
+          <ul>
+            <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_twitter"><i class="icon-vk" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mainwrapper" data-sticky_parent>
+  <div id="content" class="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <div class="float-mobile-menu">
+        <ul>
+          <li> <a href="#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+          <li> <a class="active" href="#start_up">Стартап</a> </li>
+          <li> <a href="#it" class="go_to">IT</a> </li>
+          <li> <a href="#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+          <li> <a href="#coworking" class="go_to">Співпраця з Європейськими Фірмами</a> </li>
+          <li> <a href="#grants" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+          <li> <a href="#progect" class="go_to">Проект Менеджмент</a> </li>
+        </ul>
+      </div>
+    </div>
+    <section id="mainContent"> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id = "biz_europe">Створення бізнесу в Європі</h1>
+      <p class="wow fadeIn">Створення бізнесу за кордоном під ключ. «Не потрібно боятись великих витрат, потрібно боятись мало заробляти». Метою створення «вивезення бізнесу» за кордон є не тільки пошук зменшеної ставки оподаткування, а розширення ринку збуту, збільшення та захисту свого капіталу.</p>
+      <p class="wow fadeIn">
+        -	Реєстрація та обслуговування бізнесу за кордоном
+       </p>
+       <p class="wow fadeIn">
+        -	Юридичний аналіз бізнесу в різних країнах 
+       </p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id = "start_up" ><!-- Blog title -->Стартап</h1>
+      <p class="wow fadeIn">Start-up. Це щойно створена компанія, яка у своїй діяльності буде використовувати інноваційні ідеї. Однією з основних причин створення, успішного розвитку та подальшого існування стартапів -вважають неповороткість і повільність великих корпорацій, які успішно використовують уже наявні продукти, а розробкою і створенням нових майже, не займаються. Тому стартапи, завдяки своїй мобільності, в плані втілення нових ідей, становлять конкуренцію великим корпораціям. Почніть з малого і ми Вам у цьому допоможемо. </p>
+      <p class="wow fadeIn"> - Пошук підходящих новаторських ідей</p>
+      <p class="wow fadeIn"> - Пошук команди для запуску «стартапу»</p>
+      <p class="wow fadeIn"> - Аналіз ринку саме під ідею стартапу</p>
+      <p class="wow fadeIn"> - Розробка стратегії запуску</p>
+      <p class="wow fadeIn"> - Технічний супровід запуску стартапу</p>
+      <p class="wow fadeIn"> - Пошук інвесторів для реалізації «стартапу»</p>
+      <p class="wow fadeIn"> - Злиття «стартапів» з метою більшої продуктивності</p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id="it"><!-- Blog title -->ІТ</h1>
+      <p class="wow fadeIn">Україна стала першою країною в Європі в галузі IT-аутсорсингу і розробки програмного забезпечення. Наша команда фахівців надає професійні послуги у напрямках:</p>
+      <p class="wow fadeIn"> - Консалтинг IT аутсорсингу в країнах Євройського союзу</p>
+      <p class="wow fadeIn"> - Юридичний супровід Українських ІТ компаній в Європі</p>
+      <p class="wow fadeIn"> - Консалтинг  українських ІТ фрі-лансерів у Європі та США</p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id="coworking"><!-- Blog title -->Бізнес для бізнесу (аутсорсинг)</h1>
+      <p class="wow fadeIn">Економічний напрямок України в Європейський союз, змушує Український бізнес навчатись та розвиватись у тенденціях розвинутих країн.
+Наші послуги по аутсорсингу включають в себе:</p>
+      <p class="wow fadeIn"> - Послуги аутсорсингу та пошуку підрядників</p>
+      <p class="wow fadeIn"> - Перевірку авторитету та репутації європейського та українського партнера</p>
+      <p class="wow fadeIn"> - Виконання домовленостей по контрактам</p>
+      <p class="wow fadeIn"> - Консультування з питань щодо ведення бізнесу в цілому</p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id="grants"><!-- Blog title -->Проект менеджмент</h1>
+      <p class="wow fadeIn">Наша команда менеджерів пропонує послуги по управлінню проектами з виходом на європейський ринок, які представлені такими послугами:</p>
+      <p class="wow fadeIn"> - Стратегічне та фінансове планування</p>
+      <p class="wow fadeIn"> - Розрахунок первинних витрат проекту та бізнесу</p>
+      <p class="wow fadeIn"> - Оцінка успішності проекту</p>
+      <p class="wow fadeIn"> - Створення бізнес плану та контроль етапності проектів</p>
+      <p class="wow fadeIn"> - Тимчасове управління компаніями;</p>
+      <p class="wow fadeIn"> - Вдосконалення бізнес процесів </p>
+      <p class="wow fadeIn"> - Оптимізація витрат</p>
+      <p class="wow fadeIn"> - Згортання проектів</p>
+      <p class="wow fadeIn"> - Зупинення та закриття проектів</p>
+      <hr>
+      <!--End of text section--> 
+      <!--Text-section-->
+      <h1 class="wow fadeInLeft" id="progect"><!-- Blog title -->Консультація для українського бізнесу в Європу</h1>
+      <p class="wow fadeIn">З огляду, на те, що підприємці з України рухається у Європейському напрямку, ми здатні надавати консалтинг наступним сферам:</p>
+      <p class="wow fadeIn"> - Страхування, банківська справа та фінанси;</p>
+      <p class="wow fadeIn"> - Деревна промисловість;</p>
+      <p class="wow fadeIn"> - Інформаційні технології;</p>
+      <p class="wow fadeIn"> - Будівництво та придбання нерухомості за кордоном;</p>
+      <p class="wow fadeIn"> - Сировинна галузь та інші.</p>
+      <!--End of text section--> 
+      
+    </section>
+    <section>
+      <div class = "float-menu hidden-sm hidden-xs hidden-md">
+        <div class="float-panel" style="margin-top: 5%;">
+          <div>
+            <ul>
+              <li> <a href="#biz_europe" class="go_to">Створення бізнесу в Європі</a> </li>
+              <li> <a class="active go_to" href="#start_up">Стартап</a> </li>
+              <li> <a href="#coworking" class="go_to">Бізнес для бізнесу</a> </li>
+              <li> <a href="#it" class="go_to">IT</a> </li>
+              <li> <a href="#grants" class="go_to">Консультація для українського бізнесу в Європу</a> </li>
+              <li> <a href="#progect" class="go_to">Проект Менеджмент</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-distributed">
+  <div class="footer-left" >
+    <div><img class="logo wow fadeIn" src ="images/logo.png" height="125px" width="125px" alt="blc_logo"></div>
+    <p class="footer-links"><a class="wow fadeInUp" href="index.html">Головна</a> · <a class="wow fadeInUp" href="about_us.html">Про нас</a> · <a class="wow fadeInUp" href="#">Юридичні послуги</a> · <a class="wow fadeInUp" href="consulting.html">Консалтинг</a> · <a class="wow fadeInUp" href="contact.html">Контакти</a></p>
+  </div>
+  <div class="footer-center">
+    <div> <i class="fa fa-map-marker wow bounceIn"></i>
+      <p class="wow fadeInRight"><span>Вулиця</span>Місто, Україна</p>
+    </div>
+    <div> <i class="fa fa-phone wow bounceIn"></i>
+      <p class="wow fadeInRight">+38000000000</p>
+    </div>
+    <div> <i class="fa fa-envelope wow bounceIn"></i>
+      <p class="wow fadeInRight"><a href="mailto:support@company.com">info@businesslawconsulting.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about wow fadeInRight"> <span>Про компанію</span>  Наша мета стати лідерами ринку західної України у своєму сегменті рину. Для втілення цієї мети, ми зобов’язані проводити якісний консалтинг бізнесменів в ЄС, впроваджувати найновіші методи роботи з клієнтами у напрямку сфер ІТ та Стартапу, стратегічно та кваліфіковано розробляти проекти по створенню бізнесу в Європейському Союзі. </p>
+    <div class="footer-icons"> <a href="#"><i class=" wow bounceIn fa fa-facebook"></i></a> <a style = "padding-right: 1%;" href="#"><i class=" fa icon-vk wow bounceIn"></i></a> </div>
+  </div>
+  <div>
+    <p class="footer-company-name">BLC &copy; 2017</p>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- here stars scrolling icon --> 
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script> 
+<!-- //here ends scrolling icon --> 
+
+<!-- js --> 
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/scroll.js"></script>
+<!-- //js --> 
+<!-- for bootstrap working --> 
+<script src="js/bootstrap.js"></script> 
+<!-- //for bootstrap working --> 
+<!--WOW JS animation--> 
+<script  src="js/wow.min.js"></script> 
+<script>
+              new WOW().init();
+              </script> 
+
+<script type="text/javascript">
+
+		$(document).ready(function(){
+
+  $('#cssmenu > ul > li:has(ul)').addClass("has-sub");
+
+  $('#cssmenu > ul > li > a').click(function() {
+    var checkElement = $(this).next();
+    
+    $('#cssmenu li').removeClass('active');
+    $(this).closest('li').addClass('active');	
+    
+    
+    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+      $(this).closest('li').removeClass('active');
+      checkElement.slideUp('normal');
+    }
+    
+    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+      $('#cssmenu ul ul:visible').slideUp('normal');
+      checkElement.slideDown('normal');
+    }
+    
+    if (checkElement.is('ul')) {
+      return false;
+    } else {
+      return true;	
+    }		
+  });
+
+});
+	</script> 
+<script> 
+$( "#button" ).click(function() {
+$( "#item" ).toggle();
+});
+</script>
+</body>
+</html>
