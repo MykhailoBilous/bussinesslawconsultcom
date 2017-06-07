@@ -14,8 +14,14 @@
 }
 
 @font-face{
+	font-family: 'Kievit_Extrabold';
+	src: url(../fonts/kievit_extrabold.ttf);
+}
+@font-face{
+	font-family: 'Kievit_Bold';
+	src: url(../fonts/kievit-bold.ttf);
+}
+@font-face{
 	font-family: 'kievit';
-	src: url(../fonts/Kievit_Extrabold.ttf);
-	font-weight: normal;
-	font-style: normal; 
+	src: url(../fonts/kievit-regular.ttf);
 }

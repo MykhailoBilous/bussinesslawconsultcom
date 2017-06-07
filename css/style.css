@@ -6,7 +6,28 @@ section {
 	margin: 5% 0 7% 0;
 }
 /*Welcome section*/
+.button-yellow{
+	text-align: center;
+}
+.info-content{
+	font-family: kievit_regular;
+}
+.info-content li{
+	color: rgba(146,146,146,1.00);
+	list-style-type: disc;
+}
+.info-content li,p{
+	font-size: 16px;
+}
 
+.button-yellow button{
+	border-radius: 25px;
+	border-style: solid;
+	background-color: #ffee58;
+	border-color: #ffee58;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+}
 /*Navbar styles*/
 header {
 	background: #55acee;
@@ -100,7 +121,7 @@ header > nav > ul > li > a {
 .header-text {
 	text-transform: uppercase;
 	color: #fff;
-	margin-top: 200px;
+	margin-top: 160px;
 }
 .header-text h1 {
 	border: thin 1px #434343;
@@ -108,6 +129,7 @@ header > nav > ul > li > a {
 	-webkit-text-shadow: 3px 3px 5px #434343;
 	-moz-text-shadow: 3px 3px 5px #434343;
 	-o-text-shadow: 3px 3px 5px #434343;
+	font-family: kievit_bold;
 }
 
 @media (max-width: 1000px) {
@@ -135,6 +157,9 @@ header > nav > ul > li > a {
 header > nav > ul > li > a > div > span {
 	margin: 4px 0 0;
 }
+}
+.social-icons{
+	font-size: 18px;
 }
 /*Welcome block Styles*/
 .welcome {
@@ -177,7 +202,7 @@ header > nav > ul > li > a > div > span {
 }
 .agileits-contact-info ul li {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 18px;
 	color: black;
 }
 .agileits-contact-info ul li span {
@@ -234,6 +259,7 @@ header > nav > ul > li > a > div > span {
 	text-shadow: 6px 6px 10px #434343;
 	color: #434343;
 	text-overflow: clip;
+	font-size: 14px;
 }
 /*Welcome block Styles end*/
 /*--contact--*/

@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
       </li>
-      <li> <a href="contact.html" target="contact" class="listed">
+      <li> <a href="contact.html#cont" target="contact" class="listed">
         <div> Контакти </div>
         </a> </li>
     </ul>
@@ -148,10 +148,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class = "welcome">
   <div class="container">
     <div class="row">
-      <div class="header-text wow fadeInDown">
+      <div class="col-md-12 col-sm-12 col-lg-12 header-text wow fadeInDown" >
         <h1 style="text-align: center;">BLC фінансово-юридична компанія, яка надає послуги для бізнесу у сфері Українського та Європейського права.</h1>
       </div>
-      <div class="agile-header">
+      <div class="col-md-12 col-sm-12 col-lg-12 wow fadeInTop" >
+      <div class="button-yellow"><button data-toggle="modal" data-target="#myModal">Замовити безкоштовну консультацію</button></div>
+      </div>
+      <div class="col-sm-12 agile-header">
         <div class="agileits-contact-info text-right wow fadeInUp">
           <ul>
             <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">mail@example.com</a></li>
@@ -159,7 +162,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
         <div class="w3_agileits_social_media wow fadeInUp">
-          <ul>
+          <ul class="social-icons">
             <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="#" class="wthree_twitter"><i class="icon-vk" aria-hidden="true"></i></a></li>
           </ul>
@@ -169,6 +172,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
   </div>
 </div>
+<!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" style="height: 25%; width: 75%; margin: auto;">
+            <div class="modal-header modal-box-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title modal-box-head">Замовити безкоштовну консультацію</h4>
+            </div>
+            <div class="modal-body modal-box">
+              <form>
+                <div class="form-group">
+                  <label for="usr">Ім'я:</label>
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                  <label for="email">Емейл:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="countries_phone1">Номер телефону:</label>
+                  <input type="text" class="form-control bfh-phone" data-country="countries_phone1">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Коментар:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn blue">Відправити</button>
+              </form>
+            </div>
+            <div class="modal-footer modal-box-footer">
+              <h6>*Надана інформація є повінсттю анонімною і не підлягає розповсюдженню</h6>
+            </div>
+          </div>
+        </div>
+      </div>
 <!-- About -->
 <section>
 <div class="container" style="margin-top: 2%;">
@@ -182,8 +222,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="col-lg-12 wow fadeIn">
       <hr>
       <p>Україна обрала стратегічним напрямком розвитку інтеграцію в європейський економічний і політико-правовий простір. Вступ до Європейського Союзу (ЄС) визначений ключовим зовнішньополітичним пріоритетом і стратегічною метою України на найвищому державному рівні.</p>
-      <p>Зв’язки з європейськими юридичними та фінансовими компаніями допомагають нам надавати нашим клієнтам, якомога якісніші послуги.</p>
-      <p>Наша мета стати лідерами ринку західної України у своєму сегменті рину. Для втілення цієї мети, ми зобов’язані проводити якісний консалтинг бізнесменів в ЄС, впроваджувати найновіші методи роботи з клієнтами у напрямку сфер ІТ та Стартапу, стратегічно та кваліфіковано розробляти проекти по створенню бізнесу в Європейському Союзі.</p>
+      <p> Комунікація з європейськими юридичними та фінансовими компаніями стала фундаментом того, щоб український бізнес зміг отримати найякісніші послуги від нашої компанії.</p>
+      <p>Наша мета - стати лідерами ринку західної України у своєму сегменті. Для втілення цієї мети, ми надаємо якісний консалтинг для бізнесу, впроваджуємо найновіші методи роботи з клієнтами у напрямку сфер ІТ та проект менеджменту, стратегічно та кваліфіковано розробляємо договори для кожного клієнта.</p>
       </div>
       </div>
       </div>
@@ -195,11 +235,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <footer class="footer-distributed">
   <div class="footer-left">
     <div><img class="logo wow fadeIn" src ="images/logo.png" height="125px" width="125px" alt="blc_logo"></div>
-   <p class="footer-links"><a class="wow fadeInUp" href="index.html">Головна</a> · <a class="wow fadeInUp" href="about_us.html">Про нас</a> · <a class="wow fadeInUp" href="#">Юридичні послуги</a> · <a class="wow fadeInUp" href="consulting.html">Консалтинг</a> · <a class="wow fadeInUp" href="contact.html">Контакти</a></p>
+    <p class="footer-links"><a class="wow fadeInUp" href="index.html">Головна</a> · <a class="wow fadeInUp" href="about_us.html">Про нас</a> · <a class="wow fadeInUp" href="law.html#finances">Юридичні послуги</a> · <a class="wow fadeInUp" href="consulting.html#biz_europe">Консалтинг</a> · <a class="wow fadeInUp" href="contact.html#cont">Контакти</a></p>
   </div>
   <div class="footer-center">
     <div> <i class="fa fa-map-marker wow bounceIn"></i>
-      <p class="wow fadeInRight"><span>Вулиця</span>Місто, Україна</p>
+      <p class="wow fadeInRight"><span>Івана Франка, 56</span>Ужгород, Україна</p>
     </div>
     <div> <i class="fa fa-phone wow bounceIn"></i>
       <p class="wow fadeInRight">+38000000000</p>
@@ -209,15 +249,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
   </div>
   <div class="footer-right">
-    <p class="footer-company-about wow fadeInRight"> <span>Про компанію</span> Розробка індивідуальних проектів для кожного бізнесу та пошук найякісніших рішень фінсового та юридичного напрмків.</p>
+    <p class="footer-company-about wow fadeInRight"> <span>Про компанію</span>  Розробка індивідуальних проектів для кожного бізнесу та пошук найякісніших рішень фінсового та юридичного напрмків. </p>
     <div class="footer-icons"> <a href="#"><i class=" wow bounceIn fa fa-facebook"></i></a> <a style = "padding-right: 1%;" href="#"><i class=" fa icon-vk wow bounceIn"></i></a> </div>
   </div>
-  
   <div>
     <p class="footer-company-name">BLC &copy; 2017</p>
   </div>
 </footer>
-<!-- / FOOTER --> 
 <!-- for bootstrap working --> 
 <script src="js/bootstrap.js"></script> 
 <!-- //for bootstrap working --> 

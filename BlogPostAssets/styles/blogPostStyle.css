@@ -15,7 +15,6 @@ hr{
 }
 #content #mainContent h3 {
 	/*Captions ot Taglines */
-	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
 	color: rgba(146,146,146,1.00);
@@ -28,7 +27,6 @@ hr{
 #content #mainContent p {
 	/* All paragraphs under maincontent */
 	color: rgba(146,146,146,1.00);
-	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
 	text-align: justify;
