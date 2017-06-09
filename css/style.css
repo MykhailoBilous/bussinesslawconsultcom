@@ -6,9 +6,7 @@ section {
 	margin: 5% 0 7% 0;
 }
 /*Welcome section*/
-.button-yellow{
-	text-align: center;
-}
+
 .info-content{
 	font-family: kievit_regular;
 }
@@ -19,7 +17,10 @@ section {
 .info-content li,p{
 	font-size: 16px;
 }
-
+.button-yellow{
+	text-align: center;
+	margin-top: 100px;
+}
 .button-yellow button{
 	border-radius: 25px;
 	border-style: solid;
@@ -118,10 +119,31 @@ header > nav > ul > li > a {
 	display: none;
 }
 }
+.text-logo {
+	text-align: center;
+	margin-top: 20px;
+}
+.text-logo h1{
+	font-size: 100px !important;
+	font-family: kievit_bold;
+	color: #fff;
+	text-shadow: 3px 3px 5px #434343;
+	-webkit-text-shadow: 3px 3px 5px #434343;
+	-moz-text-shadow: 3px 3px 5px #434343;
+	-o-text-shadow: 3px 3px 5px #434343;
+}
+.text-logo h3{
+	font-family: kievit;
+	color: #fff;
+	text-shadow: 3px 3px 5px #434343;
+	-webkit-text-shadow: 3px 3px 5px #434343;
+	-moz-text-shadow: 3px 3px 5px #434343;
+	-o-text-shadow: 3px 3px 5px #434343;
+}
 .header-text {
 	text-transform: uppercase;
 	color: #fff;
-	margin-top: 160px;
+	margin-top: 100px;
 }
 .header-text h1 {
 	border: thin 1px #434343;
@@ -130,6 +152,22 @@ header > nav > ul > li > a {
 	-moz-text-shadow: 3px 3px 5px #434343;
 	-o-text-shadow: 3px 3px 5px #434343;
 	font-family: kievit_bold;
+}
+
+@media screen and (max-width: 1000px)
+{
+	.header-text h1{
+		font-size: 20px !important;
+	}
+	.text-logo h1{
+		font-size: 60px !important;
+	} 
+	.social-icons{
+		font-size: 15px !important;
+	}
+	.agile-header{
+		font-size: 15px !important;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -254,7 +292,7 @@ header > nav > ul > li > a > div > span {
 	text-align: center;
 }
 .agile-header {
-	margin: 20% 0 0 0;
+	margin: 2% 0 0 0;
 	border-top: 1px solid #434343;
 	text-shadow: 6px 6px 10px #434343;
 	color: #434343;
